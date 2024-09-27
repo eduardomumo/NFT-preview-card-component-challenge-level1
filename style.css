@@ -1,0 +1,167 @@
+:root{
+--Verydarkblue-main: hsl(217, 54%, 11%);
+--Verydarkblue-card: hsl(216, 50%, 16%);
+--Verydarkblue-line : hsl(215, 32%, 27%);
+--White: hsl(0, 0%, 100%);
+--blue-font: hsl(200, 30%, 70%);
+--cyan: #00FFF8;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: var(--Verydarkblue-main);
+    color: var(--blue-font);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 18px;
+    font-family: "Outfit", sans-serif;
+}
+
+/* header style */
+
+header{
+    background: hsl(216, 50%, 16%);
+    max-width: 360px;
+    width: 100%;
+    border-radius: 14px 14px 0 0;
+    padding: 20px 20px 0 20px;
+}
+
+.img-container{
+    position: relative;   
+}
+
+.img-equilibrium{
+    width: 100%;
+    border-radius: 14px;
+}
+
+/* header background hover */
+
+.image-background-hover{
+    opacity: 0;
+}
+
+.background-hover{
+    background: rgb(0, 225, 225, .5 );
+    width: 100%;
+    border-radius: 14px;
+    position: absolute;
+    inset: 0;
+}
+
+.img-hover{
+position: absolute;
+inset: 0;
+margin: auto;
+}
+
+.image-background-hover:hover{
+    opacity: 1;
+}
+
+/* main style */
+main{
+    background: hsl(216, 50%, 16%);
+    max-width: 360px;
+    width: 100%;
+    padding: 0 20px;
+}
+
+h1{
+    color: white;
+    font-size: 23px;
+    font-weight: 600;
+    padding: 20px 0 20px 0;
+    display: inline-block;
+}
+
+h1:hover{
+    color: var(--cyan);
+}
+
+.main-text{
+    line-height: 26px;
+    font-weight: 300;
+}
+
+.container-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 30px;
+}
+
+.ethereum{
+    color: var(--cyan);
+    display: flex;
+    gap: 8px;
+}
+
+.img-ethereum{
+    width: 13px;
+}
+
+.clock{
+    display: flex;
+    gap: 8px;
+    padding-right: 10px;
+}
+
+.img-clock{
+    width: 18px;
+}
+
+.border{
+    border-bottom: solid 1px var(--Verydarkblue-line);
+    padding-top: 25px;
+}
+
+/* Footer Style */
+footer{
+    background: hsl(216, 50%, 16%);
+    max-width: 360px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px 20px 20px 20px;
+    border-radius: 0 0 14px 14px;
+    gap: 6px;
+    font-weight: 300;
+}
+
+.img-avatar{
+    width: 33px;
+    border: solid white 1px;
+    border-radius: 100%;
+}
+
+.footer-text{
+    padding-left: 15px;
+    font-size: 16px;
+}
+
+.autor{
+    color: var(--White);
+    font-size: 16px;
+}
+
+.autor:hover{
+    color: var(--cyan);
+}
+
+.attribution{
+    position: fixed;
+    bottom: 0;
+}
+
